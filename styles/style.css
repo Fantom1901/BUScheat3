@@ -33,7 +33,7 @@ body {
 
 #currentDate {
     color: white;
-    font-size: 200%;
+    font-size: 3svb;
     font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute; top: 57vh; left: 9vh;
