@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="styles/style.css">
+
+        </style>
+
+    </head>
+    <body>
+       
+        <timer>
+            <p id="countdown">Ожидание запуска</p>
+            <button id="startButton">закрыть</button>
+          
+            <script>
+              const countdownDisplay = document.getElementById('countdown');
+              const startButton = document.getElementById('startButton');
+              let timeLeft = 15; // Изменили начальное значение на 15
+              let timer;
+          
+              function updateCountdown() {
+                countdownDisplay.textContent = `Действует: ${timeLeft} сек.`;
+                timeLeft--;
+          
+                if (timeLeft < 0) {
+                  countdownDisplay.textContent = `Истёк`;
+                  clearInterval(timer);
+                }
+              }
+          
+              function startTimer() {
+                startButton.disabled = true; // Отключаем кнопку
+                timeLeft = 15; // Сбрасываем значение
+          
+                updateCountdown(); // Запускаем немедленно
+                timer = setInterval(updateCountdown, 1000);
+              }
+          
+              startButton.addEventListener('click', startTimer);
+            </script>
+        </timer>
+
+        
+
+
+
+
+        <div>
+            <img id="person" src="imeges\person.jpg">
+            <img id="autod" src="imeges\auto.jpg">
+            <img id="rub" src="imeges/rub.jpg">
+            <img id="calen" src="imeges/calen.jpg">
+            <img id="clock" src="imeges/clock.jpg">
+
+        </div>
+
+
+        <div>
+            
+            <b id="codeDisplay"></b>
+
+            <script>
+                function calceulation(first, second) {
+                    const dtnowist = Math.floor(second); // Эквивалент floor() в Python
+                    const dtdelta = first - dtnowist;
+                    const dtdeltaday = Math.floor(dtdelta / 86400); // Эквивалент floor() в Python
+                    return dtdeltaday;
+                }
+
+                const start_numder_tiket = 947467025;
+                const dtnow = Date.now() / 1000; // time.time() в Python возвращает секунды, Date.now() в JS - миллисекунды
+                const dtbase = 1739709449;
+
+                const ist = calceulation(dtnow, dtbase) * 379281 + start_numder_tiket;
+
+            
+
+                codeDisplay.textContent = Math.floor(ist)
+                
+
+            </script>
+            
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <form>
+            <div>
+
+                <b id="name_of_the_carrier">Перевозчик</b>
+                <b id="stoim">Стоимость</b>
+                <b id="data">Дата покупки</b>
+                <b id="vrem">Время покупки</b>
+
+                <hr id="hr1" width="100%" size="2" color=#2c3544 >
+
+                <hr id="hr2" width="90%" size="2" color=#2c3544 >
+
+                <hr id="hr3" width="90%" size="2" color=#2c3544 >
+
+                <hr id="hr4" width="90%" size="2" color=#2c3544 >
+
+                <hr id="hr5" width="90%" size="2" color=#2c3544 >
+
+
+
+                
+                <label for="city-select"></label>
+                <select name="city" id="city-select">
+                  <option value="">Выберите маршрут</option>
+                  <option value="sol-zor">мкрн. Солнечный - мкрн. Тихие зори</option>
+                  <option value="zor-sol">мкрн. Тихие зори - мкрн. Солнечный</option>
+                  <option value="mol-sol">Молодежная - Солнечный</option>
+                  <option value="sol-mol">Солнечный - Молодежная</option>
+                </select>
+
+
+
+                <input type="text"
+                placeholder="Введите перевозчика"
+                value="КПАТП-5"
+                id="name_of_the_carrier_interactiv">
+        
+                <input type="text"
+                placeholder="Введите номер автобуса"
+                id="route">
+        
+                <b id="price">1 шт., Полный, 44.00 ₽</b>
+                    
+                <p><span id="currentDate"></span></p>
+
+                <script>
+                  const currentDate = new Date(); // Создаем объект даты
+                  const day = currentDate.getDate(); // Получаем день месяца
+                  const monthNames = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
+                                     "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
+                  const month = monthNames[currentDate.getMonth()]; // Получаем название месяца
+                  const year = currentDate.getFullYear(); // Получаем год
+                
+                  const formattedDate = `${day} ${month} ${year} г.`; // Добавляем " г."
+                
+                  document.getElementById("currentDate").textContent = formattedDate; // Вставляем в HTML
+                </script>
+        
+                <p> <span id="currentTime"></span></p>
+
+                <script>
+                function updateTime() {
+                    const now = new Date();
+                    const hours = now.getHours().toString().padStart(2, '0'); // Добавляем ведущий ноль
+                    const minutes = now.getMinutes().toString().padStart(2, '0'); // Добавляем ведущий ноль
+                    const timeString = `${hours}:${minutes}`;
+                    document.getElementById("currentTime").textContent = timeString;
+                }
+                
+                // Обновляем время каждую секунду
+                setInterval(updateTime, 1000);
+                
+                // Вызываем updateTime() сразу, чтобы время отображалось при загрузке страницы
+                updateTime();
+                </script>
+            </div>
+        </form>
+
+
+
+
+
+    </body>
+</html>
