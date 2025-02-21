@@ -2,7 +2,7 @@ input {
     color: white;
     background: transparent;
     border: none;
-    font-size: 33px;
+    font-size: 3svb;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,6 +12,7 @@ body {
     
 }
 
+р
 
 #name_of_the_carrier_interactiv {
     
@@ -25,11 +26,12 @@ body {
 
 #price {
     color: white;
-    font-size: 33px;
+    font-size: 3svb;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute; top: 48vh; left: 9vh;
-    font-weight: lighter;
+    font-weight: 500;
 }
+
 
 #currentDate {
     color: white;
@@ -42,8 +44,8 @@ body {
 
 #currentTime {
     color: white;
-    font-weight: lighter;
-    font-size: 33px;
+    font-weight: 500;
+    font-size: 3svb;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute; top: 68vh; left: 9vh;
     text-align:center
@@ -52,9 +54,9 @@ body {
 
 #countdown {
     color: white;
-    font-size: 33px;
+    font-size: 3svb;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -77,7 +79,7 @@ body {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute; top: 25%; left: 40%;
-    font-weight: lighter;
+    font-weight: 500;
 
 }
 
@@ -85,7 +87,7 @@ body {
     color: #808c98;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: 500;
     position: absolute; top: 22vh; left: 9vh;
 }
 
@@ -94,15 +96,13 @@ body {
     border: none;
     color: #808c98;
     font-size: 22px;
-    font-weight: lighter;
+    font-weight: 500;
     font-family: Arial, Helvetica, sans-serif
     
 }
 
 
 select{
-    -moz-appearance: none;
-    -webkit-appearance: none;
     border: none;
     position: relative;
     outline: none;
@@ -115,7 +115,7 @@ select{
     position: absolute; top: 44vh; left: 9vh;
     color: #808c98;
     font-size: 22px;
-    font-weight: lighter;
+    font-weight: 500;
     font-family: Arial, Helvetica, sans-serif
 }
 
@@ -123,7 +123,7 @@ select{
     position: absolute; top: 54vh; left: 9vh;
     color: #808c98;
     font-size: 22px;
-    font-weight: lighter;
+    font-weight: 500;
     font-family: Arial, Helvetica, sans-serif
 }
 
@@ -131,7 +131,7 @@ select{
     position: absolute; top: 64vh; left: 9vh;
     color: #808c98;
     font-size: 22px;
-    font-weight: lighter;
+    font-weight: 500;
     font-family: Arial, Helvetica, sans-serif
 
 }
@@ -186,7 +186,7 @@ select{
 #codeDisplay {
     
     color: #e21a1a;
-    font-weight: lighter;
+    font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
     resize: none;
