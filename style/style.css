@@ -1,0 +1,197 @@
+input {
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #212d3b;
+    margin: 0px
+    
+}
+
+
+#name_of_the_carrier_interactiv {
+    
+    position: absolute; top: 26vh; left: 9vh;
+    
+}
+
+#route {
+    position: absolute; top: 38vh; left: 9vh;
+}
+
+#price {
+    color: white;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute; top: 48vh; left: 9vh;
+    font-weight: lighter;
+}
+
+#currentDate {
+    color: white;
+    font-size: 3svb;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute; top: 57vh; left: 9vh;
+
+}
+
+#currentTime {
+    color: white;
+    font-weight: lighter;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute; top: 68vh; left: 9vh;
+    text-align:center
+    
+}
+
+#countdown {
+    color: white;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#startButton {
+    width: 95%;
+    height: 60px;
+    background: #e21a1a;
+    position: absolute; top: 92%; left: 2vh;
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    border-radius: 12px
+}
+
+
+
+#close {
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute; top: 25%; left: 40%;
+    font-weight: lighter;
+
+}
+
+#name_of_the_carrier {
+    color: #808c98;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    position: absolute; top: 22vh; left: 9vh;
+}
+
+#city-select {
+    background: transparent;
+    border: none;
+    color: #808c98;
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+
+
+select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    position: relative;
+    outline: none;
+    padding: 5px;
+    padding-right: 40px;
+    position: absolute; top: 34vh; left: 9vh;
+}    
+
+#stoim{
+    position: absolute; top: 44vh; left: 9vh;
+    color: #808c98;
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#data{
+    position: absolute; top: 54vh; left: 9vh;
+    color: #808c98;
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#vrem{
+    position: absolute; top: 64vh; left: 9vh;
+    color: #808c98;
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+#person{
+    position: absolute; top: 24vh; left: 3vh;
+}
+
+#autod{
+    position: absolute; top: 36vh; left: 3vh;
+}
+
+#rub{
+    position: absolute; top: 46vh; left: 3vh;
+}
+
+#calen{
+    position: absolute; top: 55vh; left: 3vh;
+}
+
+#clock{
+    position: absolute; top: 66vh; left: 3vh;
+}
+
+#hr1{
+    position: absolute; top: 13vh;
+    
+}
+
+#hr2{
+    position: absolute; top: 30vh; left: 3vh;
+    
+}
+
+#hr3{
+    position: absolute; top: 42vh; left: 3vh;
+    
+}
+
+#hr4{
+    position: absolute; top: 52vh; left: 3vh;
+    
+}
+
+#hr5{
+    position: absolute; top: 62vh; left: 3vh;
+    
+}
+
+
+
+#codeDisplay {
+    
+    color: #e21a1a;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    resize: none;
+    position: absolute; top: 10vh; left: 13vh;
+    letter-spacing: 1.5px
+
+}
+
