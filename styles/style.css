@@ -135,13 +135,13 @@ select{
 
 #person{
     position: absolute; top: 23vh; left: 3vh;
-    width: 110px;
+    width: 115px;
     height: auto;
 }
 
 #person2{
     position: absolute; top: 7.5vh; left: 32vh;
-    width: 110px;
+    width: 115px;
     height: auto;
 }
 
@@ -171,7 +171,7 @@ select{
 
 #tiket{
     position: absolute; top: 8vh; left: 7vh;
-    width: 110px;
+    width: 105px;
     height: auto;
 }
 
