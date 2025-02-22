@@ -12,10 +12,18 @@ body {
     
 }
 
+img { 
+    width: 120px; height: auto; 
+}
+
+
+
+
 
 
 #name_of_the_carrier_interactiv {
     position: absolute; top: 26vh; left: 9vh;
+    
 }
 
 #route {
@@ -29,8 +37,6 @@ body {
     position: absolute; top: 48vh; left: 9vh;
     font-weight: 500;
 }
-
-
 
 
 #currentDate {
@@ -62,32 +68,24 @@ body {
 
 #startButton {
     width: 95%;
-    height: 60px;
+    height: 5%;
     background: #e21a1a;
-    position: absolute; top: 92%; left: 2vh;
+    position: absolute; top: 93%; left: 2%;
     border: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px;
-    border-radius: 12px
+    font-size: 2svb;
+    border-radius: 35px
 }
 
 
 
-#close {
-    color: white;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute; top: 25%; left: 40%;
-    font-weight: 500;
-
-}
 
 #name_of_the_carrier {
     color: #808c98;
-    font-size: 22px;
+    font-size: 2svb;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-weight: lighter;
     position: absolute; top: 22vh; left: 9vh;
 }
 
@@ -95,7 +93,7 @@ body {
     background: transparent;
     border: none;
     color: #808c98;
-    font-size: 22px;
+    font-size: 2svb;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif
     
@@ -103,6 +101,8 @@ body {
 
 
 select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
     border: none;
     position: relative;
     outline: none;
@@ -114,7 +114,7 @@ select{
 #stoim{
     position: absolute; top: 44vh; left: 9vh;
     color: #808c98;
-    font-size: 22px;
+    font-size: 2svb;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif
 }
@@ -122,7 +122,7 @@ select{
 #data{
     position: absolute; top: 54vh; left: 9vh;
     color: #808c98;
-    font-size: 22px;
+    font-size: 2svb;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif
 }
@@ -130,30 +130,52 @@ select{
 #vrem{
     position: absolute; top: 64vh; left: 9vh;
     color: #808c98;
-    font-size: 22px;
+    font-size: 2svb;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif
 
 }
 
 #person{
-    position: absolute; top: 24vh; left: 3vh;
+    position: absolute; top: 23vh; left: 3vh;
+    width: 160px;
+    height: auto;
+}
+
+#person2{
+    position: absolute; top: 8vh; left: 38vh;
+    width: 160px;
+    height: auto;
 }
 
 #autod{
-    position: absolute; top: 36vh; left: 3vh;
+    position: absolute; top: 35vh; left: 3vh;
+    width: 160px;
+    height: auto;
 }
 
 #rub{
-    position: absolute; top: 46vh; left: 3vh;
+    position: absolute; top: 44vh; left: 3vh;
+    width: 160px;
+    height: auto;
 }
 
 #calen{
     position: absolute; top: 55vh; left: 3vh;
+    width: 160px;
+    height: auto;
 }
 
 #clock{
-    position: absolute; top: 66vh; left: 3vh;
+    position: absolute; top: 65vh; left: 3vh;
+    width: 160px;
+    height: auto;
+}
+
+#tiket{
+    position: absolute; top: 8vh; left: 15vh;
+    width: 160px;
+    height: auto;
 }
 
 #hr1{
@@ -181,6 +203,11 @@ select{
     
 }
 
+#hr6{
+    position: absolute; top: 13vh; left: 15vh;
+}
+
+
 
 
 #codeDisplay {
@@ -188,10 +215,26 @@ select{
     color: #e21a1a;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px;
+    font-size: 2.5svb;
     resize: none;
-    position: absolute; top: 10vh; left: 13vh;
+    position: absolute; top: 9vh; left: 20vh;
     letter-spacing: 1.5px
 
 }
 
+#square{
+    position: absolute; top: 92%;
+    width: 100%;
+    height: 8%;
+    background-color: #151e27;
+    
+}
+
+#control{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: lighter;
+    position: absolute; top: 9%; left: 43vh;
+
+}
