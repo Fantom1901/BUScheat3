@@ -7,39 +7,40 @@
 
     </head>
     <body>
-       
-        <timer>
-          <div id="square"></div>
-          <p id="countdown">Ожидание запуска</p>
-            <button id="startButton">закрыть</button>
+      <div id="square"></div>
+      <timer>
+        <p id="countdown">Ожидание запуска</p>
+          <button id="startButton">закрыть</button>
           
-            <script>
-              const countdownDisplay = document.getElementById('countdown');
-              const startButton = document.getElementById('startButton');
-              let timeLeft = 15; // Изменили начальное значение на 15
-              let timer;
+          <script>
+            const countdownDisplay = document.getElementById('countdown');
+            const startButton = document.getElementById('startButton');
+            let timeLeft = 15; // Изменили начальное значение на 15
+            let timer;
           
-              function updateCountdown() {
-                countdownDisplay.textContent = `Действует: ${timeLeft} сек.`;
-                timeLeft--;
+            function updateCountdown() {
+              countdownDisplay.textContent = `Действует: ${timeLeft} сек.`;
+              timeLeft--;
           
-                if (timeLeft < 0) {
-                  countdownDisplay.textContent = `Истёк`;
-                  clearInterval(timer);
-                }
+              if (timeLeft < 0) {
+                countdownDisplay.textContent = `Истёк`;
+                clearInterval(timer);
               }
+            }
           
-              function startTimer() {
-                startButton.disabled = true; // Отключаем кнопку
-                timeLeft = 15; // Сбрасываем значение
+            function startTimer() {
+              startButton.disabled = true; // Отключаем кнопку
+              timeLeft = 15; // Сбрасываем значение
           
-                updateCountdown(); // Запускаем немедленно
-                timer = setInterval(updateCountdown, 1000);
-              }
+              updateCountdown(); // Запускаем немедленно
+              timer = setInterval(updateCountdown, 1000);
+            }
           
-              startButton.addEventListener('click', startTimer);
-            </script>
-        </timer>
+            startButton.addEventListener('click', startTimer);
+          </script>
+          
+
+      </timer>
 
         
 
@@ -52,36 +53,49 @@
             <img id="rub" src="imeges/rub.jpg">
             <img id="calen" src="imeges/calen.jpg">
             <img id="clock" src="imeges/clock.jpg">
+            <img id="tiket" src="imeges/tiket.jpg">
+            <img id="person2" src="imeges/person.jpg">
 
         </div>
 
 
         <div>
             
-            <b id="codeDisplay"></b>
+          <b id="codeDisplay"></b>
 
-            <script>
-                function calceulation(first, second) {
-                    const dtnowist = Math.floor(second); // Эквивалент floor() в Python
-                    const dtdelta = first - dtnowist;
-                    const dtdeltaday = Math.floor(dtdelta / 86400); // Эквивалент floor() в Python
-                    return dtdeltaday;
+          <script>
+            function calculation(first, second) {
+              const dtnowist = Math.floor(second);
+              const dtdelta = first - dtnowist;
+              const dtdeltaday = Math.floor(dtdelta / 86400);
+              return dtdeltaday;
+            }
+          
+            const start_numder_tiket = 947467025;
+            const dtnow = Date.now() / 1000;
+            const dtbase = 1739709449;
+          
+            const ist = calculation(dtnow, dtbase) * 379281 + start_numder_tiket;
+          
+            function formatNumber(number) {
+              const numStr = Math.floor(number).toString(); // Преобразуем в строку и отбрасываем дробную часть
+              let formattedNumber = "";
+          
+              for (let i = numStr.length - 1; i >= 0; i--) {
+                formattedNumber = numStr[i] + formattedNumber;
+                if ((numStr.length - 1 - i) % 3 === 2 && i !== 0) {
+                  formattedNumber = " " + formattedNumber; // Добавляем пробел после каждой третьей цифры (с конца)
                 }
-
-                const start_numder_tiket = 947467025;
-                const dtnow = Date.now() / 1000; // time.time() в Python возвращает секунды, Date.now() в JS - миллисекунды
-                const dtbase = 1739709449;
-
-                const ist = calceulation(dtnow, dtbase) * 379281 + start_numder_tiket;
-
+              }
+          
+              return formattedNumber;
+            }
+          
+            const codeDisplay = document.getElementById("codeDisplay");
+            codeDisplay.textContent = formatNumber(ist);
+          </script>
             
-
-                codeDisplay.textContent = Math.floor(ist)
-                
-
-            </script>
-            
-
+          <b id="control">Контроль</b>
 
 
         </div>
@@ -102,15 +116,17 @@
                 <b id="data">Дата покупки</b>
                 <b id="vrem">Время покупки</b>
 
-                <hr id="hr1" width="90%" size="3" color=#2c3544 >
+                <hr id="hr1" width="100%" size="2" color=#2c3544 >
 
-                <hr id="hr2" width="90%" size="3" color=#2c3544 >
+                <hr id="hr2" width="90%" size="2" color=#2c3544 >
 
-                <hr id="hr3" width="90%" size="3" color=#2c3544 >
+                <hr id="hr3" width="90%" size="2" color=#2c3544 >
 
-                <hr id="hr4" width="90%" size="3" color=#2c3544 >
+                <hr id="hr4" width="90%" size="2" color=#2c3544 >
 
-                <hr id="hr5" width="90%" size="3" color=#2c3544 >
+                <hr id="hr5" width="90%" size="2" color=#2c3544 >
+
+                <hr id="hr6" width="27%" size="2" color="e21a1a"
 
               
 
