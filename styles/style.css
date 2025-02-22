@@ -12,9 +12,6 @@ body {
     
 }
 
-img { 
-    width: 120px; height: auto; 
-}
 
 
 
@@ -70,7 +67,7 @@ img {
     width: 95%;
     height: 5%;
     background: #e21a1a;
-    position: absolute; top: 93%; left: 2%;
+    position: absolute; top: 97%; left: 4%;
     border: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -138,43 +135,43 @@ select{
 
 #person{
     position: absolute; top: 23vh; left: 3vh;
-    width: 160px;
+    width: 110px;
     height: auto;
 }
 
 #person2{
-    position: absolute; top: 8vh; left: 38vh;
-    width: 160px;
+    position: absolute; top: 7.5vh; left: 32vh;
+    width: 110px;
     height: auto;
 }
 
 #autod{
     position: absolute; top: 35vh; left: 3vh;
-    width: 160px;
+    width: 110px;
     height: auto;
 }
 
 #rub{
     position: absolute; top: 44vh; left: 3vh;
-    width: 160px;
+    width: 110px;
     height: auto;
 }
 
 #calen{
     position: absolute; top: 55vh; left: 3vh;
-    width: 160px;
+    width: 110px;
     height: auto;
 }
 
 #clock{
     position: absolute; top: 65vh; left: 3vh;
-    width: 160px;
+    width: 110px;
     height: auto;
 }
 
 #tiket{
-    position: absolute; top: 8vh; left: 15vh;
-    width: 160px;
+    position: absolute; top: 8vh; left: 7vh;
+    width: 110px;
     height: auto;
 }
 
@@ -204,7 +201,7 @@ select{
 }
 
 #hr6{
-    position: absolute; top: 13vh; left: 15vh;
+    position: absolute; top: 13vh; left: 8vh;
 }
 
 
@@ -217,14 +214,14 @@ select{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5svb;
     resize: none;
-    position: absolute; top: 9vh; left: 20vh;
+    position: absolute; top: 9vh; left: 13vh;
     letter-spacing: 1.5px
 
 }
 
 #square{
-    position: absolute; top: 92%;
-    width: 100%;
+    position: absolute; top: 96%;
+    width: 105%;
     height: 8%;
     background-color: #151e27;
     
@@ -235,6 +232,6 @@ select{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     font-weight: lighter;
-    position: absolute; top: 9%; left: 43vh;
+    position: absolute; top: 9%; left: 38vh;
 
 }
