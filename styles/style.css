@@ -232,7 +232,7 @@ select{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
-    font-weight: lighter;
+    font-weight: 500;
     position: absolute; top: 9%; left: 38vh;
 
 }
