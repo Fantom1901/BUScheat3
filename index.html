@@ -2,12 +2,13 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="styles/style.css">
+
         <title>Городской Транспорт</title>
 
     </head>
     <body>
-      <div id="square"></div>
       <timer>
+        <div id="square"></div>
         <p id="countdown">Ожидание запуска</p>
           <button id="startButton">закрыть</button>
           
@@ -37,30 +38,18 @@
           
             startButton.addEventListener('click', startTimer);
           </script>
-          
-
       </timer>
 
         
 
+        <upinter>
+          <hr id="hr6" width="40%" size="2" color="e21a1a">
 
-
-
-        <div>
-            <img id="person" src="imeges\person.jpg">
-            <img id="autod" src="imeges\auto.jpg">
-            <img id="rub" src="imeges/rub.jpg">
-            <img id="calen" src="imeges/calen.jpg">
-            <img id="clock" src="imeges/clock.jpg">
-            <img id="tiket" src="imeges/tiket.jpg">
-            <img id="person2" src="imeges/person.jpg">
-
-        </div>
-
-
-        <div>
-            
           <b id="codeDisplay"></b>
+          <b id="control">Контроль</b>
+
+          <img id="tiket" src="imeges/tiket.jpg">
+          <img id="person2" src="imeges/person.jpg">
 
           <script>
             function calculation(first, second) {
@@ -93,104 +82,105 @@
             const codeDisplay = document.getElementById("codeDisplay");
             codeDisplay.textContent = formatNumber(ist);
           </script>
-            
-          <b id="control">Контроль</b>
-
-
-        </div>
+        </upinter>
 
 
 
+        <perev>
+          <b id="name_of_the_carrier">Перевозчик</b>
+         
+          <input type="text"
+          placeholder="Введите перевозчика"
+          value="КПАТП-5"
+          id="name_of_the_carrier_interactiv">
+
+          <img id="person" src="imeges\person.jpg">
+
+        </perev>
+
+        <marsh>
+          <label> for="city-select"></label>
+          <select name="city" id="city-select">
+            <option value="">Выберите маршрут</option>
+            <option value="sol-zor">мкрн. Солнечный - мкрн. Тихие зори</option>
+            <option value="zor-sol">мкрн. Тихие зори - мкрн. Солнечный</option>
+            <option value="mol-sol">Молодежная - Солнечный</option>
+            <option value="sol-mol">Солнечный - Молодежная</option>
+          </select>
+
+          <input type="text"
+          placeholder="Введите номер автобуса"
+          id="route">
+
+          <img id="autod" src="imeges\auto.jpg">
+
+        </marsh>
+
+        <stoim>
+          <b id="stoim">Стоимость</b>
+
+          <b id="price">1 шт., Полный, 44.00 ₽</b>
+
+          <img id="rub" src="imeges/rub.jpg">
+
+        </stoim>
+
+        <date>
+          <b id="data">Дата покупки</b>
+
+          <p><span id="currentDate"></span></p>
+
+          <script>
+            const currentDate = new Date(); // Создаем объект даты
+            const day = currentDate.getDate(); // Получаем день месяца
+            const monthNames = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
+                               "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
+            const month = monthNames[currentDate.getMonth()]; // Получаем название месяца
+            const year = currentDate.getFullYear(); // Получаем год
+          
+            const formattedDate = `${day} ${month} ${year} г.`; // Добавляем " г."
+          
+            document.getElementById("currentDate").textContent = formattedDate; // Вставляем в HTML
+          </script>
+
+          <img id="calen" src="imeges/calen.jpg">
+
+        </date>
+
+        <vrem>
+          <b id="vrem">Время покупки</b>
+
+          <p> <span id="currentTime"></span></p>
+          <script>
+          function updateTime() {
+              const now = new Date();
+              const hours = now.getHours().toString().padStart(2, '0'); // Добавляем ведущий ноль
+              const minutes = now.getMinutes().toString().padStart(2, '0'); // Добавляем ведущий ноль
+              const timeString = `${hours}:${minutes}`;
+              document.getElementById("currentTime").textContent = timeString;
+          }
+          // Обновляем время каждую секунду
+          setInterval(updateTime, 1000);
+          // Вызываем updateTime() сразу, чтобы время отображалось при загрузке страницы
+          updateTime();
+          </script>
+
+          <img id="clock" src="imeges/clock.jpg">
+
+        </vrem>
 
 
+        <hrs>
+          <hr id="hr1" width="100%" size="2" color=#2c3544 >
 
+          <hr id="hr2" width="90%" size="2" color=#2c3544 >
 
+          <hr id="hr3" width="90%" size="2" color=#2c3544 >
 
+          <hr id="hr4" width="90%" size="2" color=#2c3544 >
 
-        <form>
-            <div>
-
-                <b id="name_of_the_carrier">Перевозчик</b>
-                <b id="stoim">Стоимость</b>
-                <b id="data">Дата покупки</b>
-                <b id="vrem">Время покупки</b>
-
-                <hr id="hr1" width="100%" size="2" color=#2c3544 >
-
-                <hr id="hr2" width="90%" size="2" color=#2c3544 >
-
-                <hr id="hr3" width="90%" size="2" color=#2c3544 >
-
-                <hr id="hr4" width="90%" size="2" color=#2c3544 >
-
-                <hr id="hr5" width="90%" size="2" color=#2c3544 >
-
-                <hr id="hr6" width="40%" size="2" color="e21a1a">
-
-              
-
-
-                
-                <label for="city-select"></label>
-                <select name="city" id="city-select">
-                  <option value="">Выберите маршрут</option>
-                  <option value="sol-zor">мкрн. Солнечный - мкрн. Тихие зори</option>
-                  <option value="zor-sol">мкрн. Тихие зори - мкрн. Солнечный</option>
-                  <option value="mol-sol">Молодежная - Солнечный</option>
-                  <option value="sol-mol">Солнечный - Молодежная</option>
-                </select>
-
-
-
-                <input type="text"
-                placeholder="Введите перевозчика"
-                value="КПАТП-5"
-                id="name_of_the_carrier_interactiv">
-        
-                <input type="text"
-                placeholder="Введите номер автобуса"
-                id="route">
-        
-                <b id="price">1 шт., Полный, 44.00 ₽</b>
-                    
-                <p><span id="currentDate"></span></p>
-
-                <script>
-                  const currentDate = new Date(); // Создаем объект даты
-                  const day = currentDate.getDate(); // Получаем день месяца
-                  const monthNames = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
-                                     "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
-                  const month = monthNames[currentDate.getMonth()]; // Получаем название месяца
-                  const year = currentDate.getFullYear(); // Получаем год
-                
-                  const formattedDate = `${day} ${month} ${year} г.`; // Добавляем " г."
-                
-                  document.getElementById("currentDate").textContent = formattedDate; // Вставляем в HTML
-                </script>
-        
-                <p> <span id="currentTime"></span></p>
-
-                <script>
-                function updateTime() {
-                    const now = new Date();
-                    const hours = now.getHours().toString().padStart(2, '0'); // Добавляем ведущий ноль
-                    const minutes = now.getMinutes().toString().padStart(2, '0'); // Добавляем ведущий ноль
-                    const timeString = `${hours}:${minutes}`;
-                    document.getElementById("currentTime").textContent = timeString;
-                }
-                
-                // Обновляем время каждую секунду
-                setInterval(updateTime, 1000);
-                
-                // Вызываем updateTime() сразу, чтобы время отображалось при загрузке страницы
-                updateTime();
-                </script>
-            </div>
-        </form>
-
-
-
-
+          <hr id="hr5" width="90%" size="2" color=#2c3544 >
+        </hrs>
 
     </body>
 </html>
