@@ -134,44 +134,44 @@ select{
 }
 
 #person{
-    position: absolute; top: 23vh; left: 3vh;
-    width: 115px;
+    position: absolute; top: 23.5vh; left: 4vh;
+    width: 80px;
     height: auto;
 }
 
 #person2{
-    position: absolute; top: 7.5vh; left: 32vh;
-    width: 115px;
+    position: absolute; top: 8.5vh; left: 33.5vh;
+    width: 75px;
     height: auto;
 }
 
 #autod{
-    position: absolute; top: 35vh; left: 3vh;
-    width: 110px;
+    position: absolute; top: 35.5vh; left: 4vh;
+    width: 80px;
     height: auto;
 }
 
 #rub{
-    position: absolute; top: 44vh; left: 3vh;
-    width: 110px;
+    position: absolute; top: 45.5vh; left: 4vh;
+    width: 80px;
     height: auto;
 }
 
 #calen{
-    position: absolute; top: 55vh; left: 3vh;
-    width: 110px;
+    position: absolute; top: 55vh; left: 4vh;
+    width: 80px;
     height: auto;
 }
 
 #clock{
-    position: absolute; top: 65vh; left: 3vh;
-    width: 110px;
+    position: absolute; top: 65vh; left: 4vh;
+    width: 80px;
     height: auto;
 }
 
 #tiket{
-    position: absolute; top: 8vh; left: 7vh;
-    width: 95px;
+    position: absolute; top: 8.8vh; left: 8.5vh;
+    width: 75px;
     height: auto;
 }
 
@@ -202,6 +202,7 @@ select{
 
 #hr6{
     position: absolute; top: 13vh; left: 8vh;
+    z-index: 999;
 }
 
 
