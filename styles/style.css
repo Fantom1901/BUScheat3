@@ -60,13 +60,13 @@ body {
 
 #startButton {
     width: 95%;
-    height: 5%;
+    height: 6%;
     background: #e21a1a;
-    position: absolute; top: 94%; left: 3%;
+    position: absolute; top: 93%; left: 3%;
     border: none;
-    color: white;
+    color: #0b2c40;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2svb;
+    font-size: 50px;
     border-radius: 25px
 }
 
