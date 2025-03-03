@@ -7,17 +7,10 @@ input {
 }
 
 body {
-    background-color: #212d3b;
+    background-color: #000000;
     margin: 0px
     
 }
-
-
-
-
-
-
-
 
 
 #name_of_the_carrier_interactiv {
@@ -69,7 +62,7 @@ body {
     width: 95%;
     height: 5%;
     background: #e21a1a;
-    position: absolute; top: 97%; left: 4%;
+    position: absolute; top: 94%; left: 4%;;
     border: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -142,7 +135,7 @@ select{
 }
 
 #person2{
-    position: absolute; top: 8.5vh; left: 33.5vh;
+    position: absolute; top: 8.5vh; left: 31vh;
     width: 75px;
     height: auto;
 }
@@ -234,7 +227,7 @@ select{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
-    font-weight: 400;
-    position: absolute; top: 9%; left: 38vh;
+    font-weight: 500;
+    position: absolute; top: 9vh; left: 35vh;
 
 }
