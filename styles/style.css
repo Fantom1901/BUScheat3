@@ -67,7 +67,6 @@ body {
     color: #0b2c40;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
-    font-weight: 500;
     border-radius: 25px
 }
 
@@ -136,7 +135,7 @@ select{
 }
 
 #person2{
-    position: absolute; top: 8.5vh; left: 31vh;
+    position: absolute; top: 8.5vh; left: 30.5vh;
     width: 75px;
     height: auto;
 }
@@ -167,7 +166,7 @@ select{
 
 #tiket{
     position: absolute; top: 8.8vh; left: 8.5vh;
-    width: 75px;
+    width: 80px;
     height: auto;
 }
 
