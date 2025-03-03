@@ -64,10 +64,11 @@ body {
     background: #e21a1a;
     position: absolute; top: 93%; left: 3%;
     border: none;
-    color: #0b2c40;
+    color: #0a2638;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
-    border-radius: 25px
+    font-weight: 700;
+    border-radius: 27px
 }
 
 
