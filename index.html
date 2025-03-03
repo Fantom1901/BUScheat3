@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="styles/style.css">
-
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+       
         <title>Городской Транспорт</title>
 
     </head>
     <body>
       <timer>
-        <p id="countdown">Ожидание запуска</p>
+          <p id="countdown">Ожидание запуска</p>
           <button id="startButton">закрыть</button>
-          
-          <script>
+        <script>
+            //это таймер и кнопка запуска
             const countdownDisplay = document.getElementById('countdown');
             const startButton = document.getElementById('startButton');
             let timeLeft = 15; // Изменили начальное значение на 15
@@ -36,10 +36,9 @@
             }
           
             startButton.addEventListener('click', startTimer);
-          </script>
+        </script>
       </timer>
 
-        
 
         <upinter>
           <hr id="hr6" width="40%" size="2" color="e21a1a">
@@ -83,8 +82,6 @@
           </script>
         </upinter>
 
-
-
         <perev>
           <b id="name_of_the_carrier">Перевозчик</b>
          
@@ -98,12 +95,15 @@
         </perev>
 
         <marsh>
+
           <select name="city" id="city-select">
             <option value="">Выберите маршрут</option>
             <option value="sol-zor">мкрн. Солнечный - мкрн. Тихие зори</option>
             <option value="zor-sol">мкрн. Тихие зори - мкрн. Солнечный</option>
             <option value="mol-sol">Молодежная - Солнечный</option>
             <option value="sol-mol">Солнечный - Молодежная</option>
+            <option value="akdbiat-LDK">Академия биатлона - ЛДК</option>
+            <option value="LDK-akdbiat">ЛДК - Академия биатлонаption>
           </select>
 
           <input type="text"
